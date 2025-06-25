@@ -9,7 +9,7 @@
   <body class="font-display lg:overflow-x-hidden">
     <div
       id="sidebar"
-      class="flex flex-col absolute w-[60%] ml-[-300px] z-70 bg-white bold lg:hidden h-full bg-amber-50s top-0 duration-300 ease-in-out"
+      class="flex flex-col absolute w-[60%]  ml-[-300px] md:ml-[-10000px] sm:ml-[-10000px] z-70 bg-white bold lg:hidden h-full bg-amber-50s top-0 duration-300 ease-in-out"
     >
       <ul class="mt-6 ml-4 font-bold text-[hsl(220,13%,13%)]">
         <li class="mb-10" id="closeside">
@@ -32,7 +32,7 @@
     </div>
     <div
       id="overlay"
-      class=" w-full h-full z-50 bg-black/75 transition-opacity duration-300 fixed top-0 hidden lg:hidden"
+      class=" w-full h-full z-50 bg-black/75 transition-opacity 500 fixed top-0 hidden lg:hidden"
     ></div>
     <div
       id="overlay2"
@@ -44,9 +44,9 @@
 
 
 
-    <section class="w-full lg:w-[80%] lg:ml-40 flex pb-5 z-10 justify-around items-center mt-4 lg:border-2 lg:border-t-transparent lg:border-l-transparent lg:border-r-transparent    lg:border-b-[hsl(223,64%,98%)]">
-      <div class="flex gap-4 justify-center items-center">
-        <div class="bold text-2xl lg:hidden" id="hum">
+    <section class="md:mb-3 w-full lg:w-[80%] lg:ml-40 flex pb-5 z-10 justify-around items-center mt-4 lg:border-2 lg:border-t-transparent lg:border-l-transparent lg:border-r-transparent    lg:border-b-[hsl(223,64%,98%)]">
+      <div class="md:mt-4 flex gap-4 justify-center items-center">
+        <div class="bold text-2xl lg:hidden " id="hum">
           <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
         </div>
         
@@ -88,7 +88,7 @@
           </ul>
         </div>
       </div>
-      <div class="flex gap-4 justify-center items-center relative">
+      <div class="md:mt-4 flex gap-4 justify-center items-center relative">
         <div id="cart" class="cursor-pointer hover:fill-[hsl(26,100%,55%)]">
           <span id="cartAmount" class="hidden bg-[hsl(25,100%,63%)] px-1 rounded-lg absolute ml-4 -mt-2 text-[14px] text-white">1</span>
           <svg
@@ -115,7 +115,7 @@
 
 
 
-    <section class="absolute w-full lg:flex lg:ml-40 lg:mr-40 lg:mt-20">
+    <section class=" absolute w-full lg:flex lg:ml-40 lg:mr-40 lg:mt-20">
       <div
         id="shoesImage"
         class="flex overflow-x-hidden relative duration-200 object-cover ease-in-out"
@@ -126,7 +126,7 @@
           <img
         id="slider-img"
           data-set="1"
-          class="mx-auto lg:rounded-xl lg:size-[350px]"
+          class="mx-auto lg:rounded-xl lg:size-[350px]  md:w-full"
           src="/src/images/image-product-1.jpg"
           alt=""
           srcset=""
@@ -144,10 +144,10 @@
       
         
 
-        <div class=" flex z-20 top-50 items-center right-50 md:block sm:block lg:hidden">
+        <div class=" flex z-20 top-50 items-center  right-50 md:block sm:block lg:hidden">
           <button
             id="btnleft"
-            class="fixed mr-5 right-85 bg-[hsl(0,0%,100%)] px-5 py-4 rounded-full"
+            class="md:right-165 md:top-1/3  fixed mr-5 right-85 bg-[hsl(0,0%,100%)] px-5 py-4 rounded-full"
           >
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -161,7 +161,7 @@
           </button>
           <button
             id="btnright"
-            class="fixed mr-2 left-90 bg-[hsl(0,0%,100%)] px-5 py-4 rounded-full"
+            class="md:left-170 md:top-1/3 fixed mr-2 left-90 bg-[hsl(0,0%,100%)] px-5 py-4 rounded-full"
           >
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -176,7 +176,7 @@
         </div>
         <div
           id="mycart"
-          class="lg:fixed  lg:w-[28%] lg:left-200 lg:mt-10 lg:py-30 duration-300 hidden shadow-xl/20 ease-in absolute z-55 left-4 right-4 overflow-hidden px-30 py-35 bg-white rounded-lg top-5"
+          class="lg:fixed md:w-[50%] md:left-100 lg:w-[28%] lg:left-200 lg:mt-10 lg:py-30 duration-300 hidden shadow-xl/20 ease-in absolute z-55 left-4 right-4 overflow-hidden px-30 py-35 bg-white rounded-lg top-5"
         >
         <div>
           <h2 class="absolute top-5 left-5 font-bold text-[hsl(220,13%,13%)]">
@@ -244,7 +244,7 @@
       <!-- The discription --------------------------------------------------------->
 
 
-      <div class="ml-5 mr-5 mt-5 text-[hsl(220,13%,13%)] lg:w-1/3 lg:ml-30">
+      <div class="ml-5 md:ml-8 mr-5 mt-5 text-[hsl(220,13%,13%)] lg:w-1/3 lg:ml-30">
         <h2 class="font-bold text-xs">SNEAKER COMPANY</h2>
         <h1 class="mt-4 text-3xl font-bold">Fall Limited Edition <br> Sneakers</h1>
         <p class="mt-4 text-sm opacity-60">
@@ -301,9 +301,9 @@
           </div>
           <button
             id="Addtocart"
-            class="mt-5 w-full lg:w-1/2 lg:px-10 lg:py-3 lg:items-end flex cursor-pointer justify-center items-center text-center text-black rounded-lg px-30 py-4 shadow-lg shadow-black/20 bg-[hsl(26,100%,55%)] hover:bg-[hsl(26,100%,70%)]"
+            class="mt-5 w-full lg:w-1/2 lg:px-10 lg:py-3 lg:items-end  flex cursor-pointer justify-center items-center text-center text-black rounded-lg px-30 py-4 shadow-lg shadow-black/20 bg-[hsl(26,100%,55%)] hover:bg-[hsl(26,100%,70%)]"
           >
-            <div class="mr-4 ">
+            <div class="mr-4 lg:hidden">
               <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
@@ -312,7 +312,7 @@
                 />
               </svg>
             </div>
-            <div class="font-bold lg:text-[14px] text-[hsl(220,13%,13%)]">Add to cart</div>
+            <div class="font-bold lg:text-[14px] lg:flex-wrap text-[hsl(220,13%,13%)]">Add to cart</div>
           </button>
         </div>
       </div>

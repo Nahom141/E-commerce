@@ -1,6 +1,7 @@
 document.getElementById("hum").addEventListener("click", () => {
   side.style.marginLeft = "0px";
   overlay.classList.remove("hidden");
+  side.classList.remove("hidden");
 });
 const side = document.getElementById("sidebar");
 const close = document.getElementById("closeside");
@@ -9,11 +10,11 @@ const overlay2 = document.getElementById("overlay2");
 const overlay3 = document.getElementById("overlay3");
 
 close.addEventListener("click", () => {
-  side.style.marginLeft = "-300px";
+  side.style.marginLeft = "-10000px";
   overlay.classList.add("hidden");
 });
 overlay.addEventListener("click", () => {
-  side.style.marginLeft = "-300px";
+  side.style.marginLeft = "-10000px";
   overlay.classList.add("hidden");
   mycart.classList.add("hidden");
 });
