@@ -29,10 +29,10 @@ overlay2.addEventListener("click", () => {
 });
 
 const images = [
-  "/src/images/image-product-1.jpg",
-  "/src/images/image-product-2.jpg",
-  "/src/images/image-product-3.jpg",
-  "/src/images/image-product-4.jpg",
+  "/images/image-product-1.jpg",
+  "/images/image-product-2.jpg",
+  "/images/image-product-3.jpg",
+  "/images/image-product-4.jpg",
 ];
 let current = 0;
 const img = document.getElementById("slider-img");
@@ -150,10 +150,10 @@ closeModal.addEventListener("click", () => {
 });
 
 const smallimg = [
-  "/src/images/image-product-1.jpg",
-  "/src/images/image-product-2.jpg",
-  "/src/images/image-product-3.jpg",
-  "/src/images/image-product-4.jpg",
+  "/images/image-product-1.jpg",
+  "/images/image-product-2.jpg",
+  "/images/image-product-3.jpg",
+  "/images/image-product-4.jpg",
 ];
 let curr = 0;
 const imgs = document.getElementById("slider");
